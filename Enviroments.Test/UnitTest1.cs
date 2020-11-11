@@ -19,8 +19,8 @@ namespace Enviroments.Test
         {
             var response = await _client.GetAsync("/");
             var teste = await response.Content.ReadAsStringAsync();
-            Assert.Equal("3", teste);
-            Assert.Equal("3", TestServerContext.Configuration.GetValue<string>("Teste"));
+            Assert.Equal("53439-240;Rua do teste;longe de pertinho", teste);
+           // Assert.Equal("3", TestServerContext.Configuration.GetValue<string>("Teste"));
         }
 
 

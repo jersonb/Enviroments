@@ -9,7 +9,7 @@ COPY Enviroments.Test/*.csproj ./Enviroments.Test/
 COPY Enviroments.Api/*.csproj ./Enviroments.Api/
 
 RUN dotnet restore
-# RUN dotnet test
+RUN dotnet test
 
 # copy everything else and build app
 COPY Enviroment.Domain/. ./Enviroment.Domain/
